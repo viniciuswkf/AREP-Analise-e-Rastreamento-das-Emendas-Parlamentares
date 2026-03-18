@@ -37,8 +37,10 @@ def scrape_deputados_partidos():
         
         df.to_csv(data_dir, index=False, encoding='utf-8-sig', sep=';')
         
-        print("[scrape] Dados dos deputados baixados.")
+        print("[etl][scrape] Dados dos deputados baixados.")
     except Exception as e:
-        exit(f"[scrape] Erro: Não foi possível baixar os dados dos deputados. {e} ")
+        exit(f"[etl][scrape] Erro: Não foi possível baixar os dados dos deputados. {e} ")
+
+
 if __name__ == '__main__':
     test = scrape_deputados_partidos()
