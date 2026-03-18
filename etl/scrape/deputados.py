@@ -7,6 +7,14 @@ CAMARA_API_URL = "https://dadosabertos.camara.leg.br/api/v2/deputados/"
 
 def scrape_deputados_partidos():
     try:
+        
+        data_name = "deputados.csv"
+        data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", data_name)
+        
+        if os.path.exists(data_dir):
+            print(f"[edl][scrape] '{data_name}' já existe, pulando...")
+            return    
+        
         request = requests.get(CAMARA_API_URL, headers={
         'Accept': "application/json"
         })
@@ -30,8 +38,6 @@ def scrape_deputados_partidos():
         
         df['NOME'] = df['NOME'].str.upper().apply(remover_acentos)
         
-        data_name = "deputados.csv"
-        data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", data_name)
         
         os.makedirs(os.path.dirname(data_dir), exist_ok=True)
         

@@ -7,6 +7,16 @@ SENADO_API_URL = "https://legis.senado.leg.br/dadosabertos/senador/lista/atual"
 
 def scrape_senadores_partidos():
     try: 
+        
+        
+        data_name = "senadores.csv"
+        
+        data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", data_name)
+            
+        if os.path.exists(data_dir):
+            print(f"[edl][scrape] '{data_name}' já existe, pulando...")
+            return    
+        
         request = requests.get(SENADO_API_URL, headers={
         "Accept": "application/json"
         })
@@ -30,10 +40,6 @@ def scrape_senadores_partidos():
         
         df['NOME'] = df['NOME'].str.upper().apply(remover_acentos)
         
-        data_name = "senadores.csv"
-        
-        data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", data_name)
-            
         df.to_csv(data_dir, index=False, encoding='utf-8-sig', sep=';')
 
         print("[etl][scrape] Dados dos senadores baixados.")
