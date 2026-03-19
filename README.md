@@ -145,3 +145,17 @@ curl "http://localhost:8000/pagamentos/?partido=PT&valor_min=100000&pagina=1"
 | Backend | FastAPI · SQLite · Uvicorn |
 | ETL | Python · pandas · basedosdados · Google BigQuery |
 | Frontend | Next.js 16 · TypeScript · Tailwind CSS 4 |
+
+---
+
+## Referências e Links
+
+Repositórios com dados do SICONV/TransfereGov:
+https://repositorio.dados.gov.br/seges/detru/
+
+Dados da Câmara e Senado:
+https://dadosabertos.camara.leg.br/api/v2/deputados/
+https://legis.senado.leg.br/dadosabertos/senador/lista/atual
+
+Dataset para consulta de dados do CNPJ:
+https://basedosdados.org/dataset/e43f0d5b-43cf-4bfb-8d90-c38a4e0d7c4f?table=b8432ff5-06c8-45ca-b8b6-33fceb24089d
