@@ -36,8 +36,8 @@ arep/
 ### 1. Clonar o repositório
 
 ```bash
-git clone <repo-url>
-cd aerp
+git clone git@github.com:viniciuswkf/AREP-Analise-e-Rastreamento-das-Emendas-Parlamentares.git
+cd AREP-Analise-e-Rastreamento-das-Emendas-Parlamentares
 ```
 
 ### 2. Configurar ambiente Python
