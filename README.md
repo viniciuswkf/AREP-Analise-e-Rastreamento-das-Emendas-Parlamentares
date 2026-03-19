@@ -10,8 +10,6 @@ O AREP é uma ferramenta de análise de dados governamentais que permite investi
 
 <img src="https://github.com/viniciuswkf/AREP-Analise-e-Rastreamento-das-Emendas-Parlamentares/blob/main/screenshot.png?raw=true" width="1000" alt="A lovely kitten">
 
-<img src="https://github.com/viniciuswkf/AREP-Analise-e-Rastreamento-das-Emendas-Parlamentares/blob/main/screenshot.png?raw=true" width="1000" alt="A lovely kitten">
-
 ---
 
 ## Estrutura do Projeto
