@@ -1,4 +1,4 @@
-# AERP — Análise de Emendas Parlamentares e Pagamentos
+# AREP — Análise e Rastreamento das Emendas Parlamentares
 
 Painel para análise, rastreio e investigação de pagamentos feitos usando verbas oriundas de Emendas Parlamentares. Cruzamento de dados públicos disponibilizados pelo TransfereGov.
 
@@ -6,14 +6,14 @@ Painel para análise, rastreio e investigação de pagamentos feitos usando verb
 
 ## O que é
 
-O AERP é uma ferramenta de análise de dados governamentais que permite investigar pagamentos realizados por meio de emendas parlamentares. O sistema ingere dados abertos da Câmara dos Deputados, Senado Federal e do portal TransfereGov (SICONV), enriquecendo-os com informações sobre fornecedores (CNPJ) para facilitar a identificação de padrões suspeitos.
+O AREP é uma ferramenta de análise de dados governamentais que permite investigar pagamentos realizados por meio de emendas parlamentares. O sistema ingere dados abertos da Câmara dos Deputados, Senado Federal e do portal TransfereGov (SICONV), enriquecendo-os com informações sobre fornecedores (CNPJ) para facilitar a identificação de padrões suspeitos.
 
 ---
 
 ## Estrutura do Projeto
 
 ```
-aerp/
+arep/
 ├── api/              # Backend FastAPI — API REST com filtros e paginação
 ├── data/             # Pipeline ETL — coleta, transformação e carga dos dados
 ├── frontend/         # Painel web (Next.js 16 + TypeScript + Tailwind CSS)
