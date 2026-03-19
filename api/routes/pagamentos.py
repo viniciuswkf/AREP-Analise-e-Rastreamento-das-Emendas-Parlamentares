@@ -15,6 +15,7 @@ def listar_pagamentos(
     parlamentar: Optional[str] = None,
     partido: Optional[str] = None,
     fornecedor: Optional[str] = None,
+    entidade: Optional[str] = None,  # 1. Novo parâmetro
     cnpj_fornecedor: Optional[str] = None,
     uf: Optional[str] = None,
     valor_min: Optional[float] = None,
@@ -45,6 +46,10 @@ def listar_pagamentos(
     if cnpj_fornecedor:
         filtros += " AND FORNECEDOR_CPF_CNPJ = ?"
         params.append(cnpj_fornecedor)
+        
+    if entidade:
+        filtros += " AND ENTIDADE LIKE ?"
+        params.append(f"%{entidade.upper()}%")
 
     if uf:
         filtros += " AND ENTIDADE_UF = ?"
