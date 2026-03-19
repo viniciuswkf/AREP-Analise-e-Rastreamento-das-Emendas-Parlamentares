@@ -8,6 +8,8 @@ Painel para análise, rastreio e investigação de pagamentos feitos usando verb
 
 O AREP é uma ferramenta de análise de dados governamentais que permite investigar pagamentos realizados por meio de emendas parlamentares. O sistema ingere dados abertos da Câmara dos Deputados, Senado Federal e do portal TransfereGov (SICONV), enriquecendo-os com informações sobre fornecedores (CNPJ) para facilitar a identificação de padrões suspeitos.
 
+<img src="https://github.com/viniciuswkf/AREP-Analise-e-Rastreamento-das-Emendas-Parlamentares/blob/main/screenshot.png?raw=true" width="1000" alt="A lovely kitten">
+
 ---
 
 ## Estrutura do Projeto
