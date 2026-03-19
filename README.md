@@ -26,8 +26,8 @@ arep/
 
 - Python 3.10+
 - Node.js 18+
--pnpm (opcional, pode usar npm)
-- Conta no Google Cloud com acesso ao BigQuery (para enriquecimento de CNPJ)
+- pnpm (opcional, pode usar npm)
+- Google Cloud CLI (`gcloud`) — [download](https://docs.cloud.google.com/sdk/docs/install-sdk?hl=pt-br#latest-version) — para autenticação interativa com BigQuery
 
 ---
 
@@ -54,15 +54,13 @@ pip install -r requirements.txt
 
 ### 3. Configurar credenciais do Google Cloud
 
-O enriquecimento de CNPJ utiliza a API do BigQuery. Defina suas credenciais:
+O enriquecimento de CNPJ utiliza a API do BigQuery via Base dos Dados. Faça login interativo:
 
 ```bash
-# Windows (PowerShell)
-$env:GOOGLE_APPLICATION_CREDENTIALS="C:\caminho\para\credenciais.json"
-
-# Linux/macOS
-export GOOGLE_APPLICATION_CREDENTIALS="/caminho/para/credenciais.json"
+gcloud auth application-default login
 ```
+
+Isso abrirá o navegador para autenticar com sua conta Google. Requer que a CLI do Google Cloud esteja instalada (`gcloud`).
 
 ### 4. Executar o pipeline ETL
 
