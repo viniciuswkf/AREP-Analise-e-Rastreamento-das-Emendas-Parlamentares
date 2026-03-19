@@ -1,12 +1,14 @@
 # AREP — Análise e Rastreamento das Emendas Parlamentares
 
-Painel para análise, rastreio e investigação de pagamentos feitos usando verbas oriundas de Emendas Parlamentares. Cruzamento de dados públicos disponibilizados pelo TransfereGov.
+Painel para análise, rastreio e investigação de pagamentos realizados por ONGs, Instituições, OSCs ou prefeituras que receberam recursos de Emendas Parlamentares. Cruzamento de dados públicos disponibilizados pelo TransfereGov.
 
 ---
 
 ## O que é
 
-O AREP é uma ferramenta de análise de dados governamentais que permite investigar pagamentos realizados por meio de emendas parlamentares. O sistema ingere dados abertos da Câmara dos Deputados, Senado Federal e do portal TransfereGov (SICONV), enriquecendo-os com informações sobre fornecedores (CNPJ) para facilitar a identificação de padrões suspeitos.
+O AREP é uma ferramenta de análise de dados governamentais que permite investigar pagamentos realizados por ONGs, Instituições, OSCs e prefeituras que receberam recursos de emendas parlamentares. O sistema ingere dados abertos da Câmara dos Deputados, Senado Federal e do portal TransfereGov (SICONV), enriquecendo-os com informações sobre fornecedores (CNPJ) para facilitar a identificação de padrões suspeitos.
+
+<img src="https://github.com/viniciuswkf/AREP-Analise-e-Rastreamento-das-Emendas-Parlamentares/blob/main/screenshot.png?raw=true" width="1000" alt="A lovely kitten">
 
 <img src="https://github.com/viniciuswkf/AREP-Analise-e-Rastreamento-das-Emendas-Parlamentares/blob/main/screenshot.png?raw=true" width="1000" alt="A lovely kitten">
 
@@ -131,9 +133,9 @@ curl "http://localhost:8000/pagamentos/?partido=PT&valor_min=100000&pagina=1"
 
 ## Fontes de Dados
 
-- **Câmara dos Deputados** — Dados Abertos (`dadosabertos.camara.leg.br`)
+- **Câmara dos deputados** — Dados Abertos (`dadosabertos.camara.leg.br`)
 - **Senado Federal** — API Legisl (`legis.senado.leg.br`)
-- **TransfereGov (SICONV)** — Portal de convênios e transferências (`portaldatransparencia.gov.br`)
+- **TransfereGov (SICONV)** — Portal de convênios e transferências da União para ONGs, Instituições, OSCs e prefeituras (`portaldatransparencia.gov.br`)
 - **Base dos Dados** — Datas de abertura de CNPJ via BigQuery
 
 ---
